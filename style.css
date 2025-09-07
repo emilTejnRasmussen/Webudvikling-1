@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #1a73e8;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Grid layout for sessions */
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Session card styling */
+.session {
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.session:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Session headings */
+.session h2 {
+  margin-bottom: 15px;
+}
+
+/* Project list styling */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Session color schemes */
+.session-1 { background: linear-gradient(135deg, #1a73e8, #4285f4); color: #fff; }
+.session-2 { background: linear-gradient(135deg, #34a853, #81c784); color: #fff; }
+.session-3 { background: linear-gradient(135deg, #fbbc05, #fdd663); color: #fff; }
+.session-4 { background: linear-gradient(135deg, #ea4335, #f48b84); color: #fff; }
+.session-5 { background: linear-gradient(135deg, #9c27b0, #ba68c8); color: #fff; }
+.session-6 { background: linear-gradient(135deg, #00bcd4, #4dd0e1); color: #fff; }
+.session-7 { background: linear-gradient(135deg, #ff9800, #ffb74d); color: #fff; }
+.session-8 { background: linear-gradient(135deg, #8bc34a, #aed581); color: #fff; }
+.session-9 { background: linear-gradient(135deg, #03a9f4, #29b6f6); color: #fff; }
+.session-10 { background: linear-gradient(135deg, #e91e63, #f06292); color: #fff; }
+.session-11 { background: linear-gradient(135deg, #795548, #a1887f); color: #fff; }
+.session-12 { background: linear-gradient(135deg, #607d8b, #90a4ae); color: #fff; }

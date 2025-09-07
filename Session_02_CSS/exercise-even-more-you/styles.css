@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
 }
 
 header {
+  padding-top: 5rem;
   background-color: #79d0d1;
   text-align: center;
   padding-bottom: 50px;
   background-image: url("Images/skyer.png");
+  height: 80vh;
+  background-size: cover;       /* makes the image scale to cover the header */
+  background-position: center; 
+
+  
 }
 
 body {
@@ -21,34 +35,47 @@ nav {
   margin: auto;
   font-family: sans-serif;
   font-weight: bold;
-  background-color: #2196f3;
+  background-color: #c26a4a;
   padding-block: 1rem;
+  height: 20vh;
+  background: linear-gradient(90deg, #c26a4a, #cc7d60);
 }
 
 nav ul {
+  display: flex;
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style: none;
+  height: 100%;
 }
 
 nav li {
-  display: inline;
-  margin: 0;
-  padding: 0;
+  flex: 1;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
 }
 
 nav a {
-  text-decoration: none;
+  display: block;
+  padding: 2rem;
   color: white;
-  padding: 1rem;
+  text-decoration: none;
+  height: 100%;
+  border-radius: 5%;
+  font-size: 5rem;
+
+  background: linear-gradient(90deg, #cc7d60, #c26a4a);
+  
 }
 
 nav a:hover {
-  background-color: #1976d275;
+  background-color: #441a09;
 }
 
 nav a.active {
-  background-color: #1976d2;
+  background-color: #cc7d60;
 }
 
 section {
@@ -105,6 +132,10 @@ h2 {
 
 #map {
   border-radius: 50%;
+  margin-top: 2rem;
+  width: 250px;       /* fixed width */
+  height: 250px;      /* fixed height */
+  object-fit: cover;
 }
 
 td {
