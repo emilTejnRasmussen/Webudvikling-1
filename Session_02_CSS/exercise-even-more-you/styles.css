@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+}
+
+header {
+  background-color: #79d0d1;
+  text-align: center;
+  padding-bottom: 50px;
+  background-image: url("Images/skyer.png");
+}
+
+body {
+  background-color: bisque;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #2196f3;
+  padding-block: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav a:hover {
+  background-color: #1976d275;
+}
+
+nav a.active {
+  background-color: #1976d2;
+}
+
+section {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#intro {
+  display: flex;
+  margin-top: 50px;
+}
+#skills {
+    background-color: #c26a4a;
+}
+
+.left {
+  width: 50%;
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  flex: 1;
+  text-align: center;
+
+  padding: 0;
+  padding-left: 5%;
+}
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 100px;
+  margin: 0rem;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  color: white; /* Text color */
+  -webkit-text-stroke: 1px black;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+}
+
+#emil {
+  transform: scaleX(-1);
+  width: 100%;
+  border-radius: 10%;
+}
+
+#map {
+  border-radius: 50%;
+}
+
+td {
+    padding: 1.2rem;
+}
