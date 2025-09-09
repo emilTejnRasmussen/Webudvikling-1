@@ -18,11 +18,9 @@ header {
   text-align: center;
   padding-bottom: 50px;
   background-image: url("Images/skyer.png");
-  height: 80vh;
-  background-size: cover;       /* makes the image scale to cover the header */
-  background-position: center; 
-
-  
+  height: 91vh;
+  background-size: cover; /* makes the image scale to cover the header */
+  background-position: center;
 }
 
 body {
@@ -35,71 +33,74 @@ nav {
   margin: auto;
   font-family: sans-serif;
   font-weight: bold;
-  background-color: #c26a4a;
-  padding-block: 1rem;
-  height: 20vh;
   background: linear-gradient(90deg, #c26a4a, #cc7d60);
+  padding: 1rem 2rem;
 }
 
 nav ul {
   display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* space between items */
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  height: 100%;
 }
 
 nav li {
-  flex: 1;
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  
+  flex: 0; /* prevent stretching */
 }
 
 nav a {
-  display: block;
-  padding: 2rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
   color: white;
   text-decoration: none;
-  height: 100%;
-  border-radius: 5%;
-  font-size: 5rem;
-
+  font-size: 1.5rem;
+  border-radius: 10px;
   background: linear-gradient(90deg, #cc7d60, #c26a4a);
-  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #441a09;
-}
-
-nav a.active {
-  background-color: #cc7d60;
+  background: #441a09;
+  transform: scale(1.05);
 }
 
 section {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+#about, #contact{
+  margin: 50px 0;
+  text-align: center;
+  height: 81vh;
+}
+
 #intro {
   display: flex;
   margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
+
+
+
 #skills {
-    background-color: #c26a4a;
+  background-color: #c26a4a;
 }
 
 .left {
   width: 50%;
   flex: 1;
-  text-align: center;
+  
 }
 
 .right {
   width: 50%;
   flex: 1;
-  text-align: center;
+  
 
   padding: 0;
   padding-left: 5%;
@@ -117,6 +118,7 @@ h2 {
   font-family: "Pacifico", cursive;
   color: white; /* Text color */
   -webkit-text-stroke: 1px black;
+  letter-spacing: 0.2em;
 }
 
 .text {
@@ -125,19 +127,70 @@ h2 {
 }
 
 #emil {
-  transform: scaleX(-1);
-  width: 100%;
+  display: block; /* prevents inline spacing jumpiness */
+  margin: 0 auto; /* centers it if needed */
   border-radius: 10%;
+  height: 60vh;
+  transform: rotateY(180deg);
 }
-
 #map {
   border-radius: 50%;
   margin-top: 2rem;
-  width: 250px;       /* fixed width */
-  height: 250px;      /* fixed height */
+  width: 25vw; /* fixed width */
+  height: 25vw; /* fixed height */
   object-fit: cover;
 }
 
-td {
-    padding: 1.2rem;
+td h3 {
+  color: #79d0d1;
 }
+
+td p {
+  font-family: "Open Sans", sans-serif;
+}
+
+td {
+  flex: 1; /* makes all cells equal width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* aligns content to top */
+  padding: 1.2rem;
+}
+
+tr {
+  display: flex;
+}
+
+
+footer {
+  background-color: #4b4242; /* solid color, no gradient */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white; /* subtle indicator */
+  transition: color 0.2s ease;
+}
+
