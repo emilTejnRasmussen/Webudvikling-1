@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                font-size: 16px;
+                
+            }
+
+            .outer {
+                width: 400px;
+                height: 200px;
+                background-color: lightblue;
+                padding: 20px;
+                font-size: 2em; 
+            }
+
+            .inner {
+                width: 50%;
+                height: 50%; 
+                background-color: coral;
+                font-size: 2rem; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">Inner box</div>
+        </div>
+    </body>
+</html>
+
+
+
+<!-- 
+Experiment with the website below, answering the following questions:
+
+What happens when you change the font size for the html element? Why?
+    the text in inner gets bigger, because it inherits the font size
+    
+Change the width of the inner box to 200 pixels. How is this different from 50% here?
+    well because the outer is fixed at 400px, it dosnt change anything here (I might be wrong)
+
+Change the font-size unit of the inner element from rem to em. What happens? Why?
+    The text gets bigger, because 2em is relative to its parents value, which is 2em aswell
+
+Which unit scales when resizing the browser window?
+    vh, vw (Viewport units) or procentages
+
+Why might rem be better for consistent typography across the site?
+    Because it scales of the root, not what it potentially has inherited 
+
+What would be the issue of using pixel units across the site?
+    its not responsive, so if someone wants all text bigger på increasing the root text size, 
+    it won't, because its fixed. 
+
+When would you use pixels instead of relative units? 
+    if something needs to be a specific pixel size acroos all resizings
+    or in declaring borderwidth maybe, stuff like that
+-->

@@ -17,7 +17,7 @@ body {
 /* Header styling */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 header h1 {
@@ -34,8 +34,17 @@ header p {
 /* Grid layout for sessions */
 .sessions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(4, auto);   /* 4 rows */
+  gap: 20px;                             /* spacing between cards */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sessions-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-rows: auto;   /* as many rows as needed */
+  }
 }
 
 /* Session card styling */
@@ -58,10 +67,14 @@ header p {
 /* Project list styling */
 ul {
   list-style: none;
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* only 2 rows */
+  grid-auto-flow: column;              /* fill down, then move right */
+  gap: 10px;
+  padding: 0;
 }
-
 ul li {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 ul li a {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Sizing</title>
+        <style>
+            
+            .box {
+                text-align: center;
+                border: 10px solid;
+                padding: 50px;
+                margin: 20px;
+                width: 400px;
+            }
+
+            .alternate {
+                box-sizing: border-box;
+                /* (2 * border(10px)) + (2 * padding(50px)) + width(400px) = 520px) */
+                width: 520px;  
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">I use content-box box-sizing</div>
+        <div class="box alternate">I use border-box box-sizing</div>
+    </body>
+</html>
