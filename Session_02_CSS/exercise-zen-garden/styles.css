@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  box-sizing: border-box;
+  /*     
+    Variables
+    */
+  --main-color: #ddbea9;
+  --second_color: #6b705c;
+  --text-color-light: #ffe8d6;
+  --text-color-dark: #2d2e2e;
+}
+
+#zen-intro {
+  height: 100vh;
+  color: var(--text-color-dark);
+  background-color: var(--main-color);
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+[role="banner"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: var(--second_color);
+}
+
+[role="banner"] h2 {
+  font-size: 1.8rem;
+  color: var(--text-color-light);
+}
+
+[role="article"] {
+  color: var(--text-color-dark);
+  margin: 5rem 30rem;
+}

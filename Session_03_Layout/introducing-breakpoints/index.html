@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Exercise</title>
+    <style>
+        /* YOUR CODE HERE */
+        h1{
+            display: none;
+        }
+        @media (max-width: 500px){
+            h1:nth-of-type(1){
+                display: contents;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 1100px){
+            h1:nth-of-type(2){
+                display: contents;
+            }
+        }
+
+        @media (min-width: 1100px){
+            
+            h1:nth-of-type(3){
+                display: contents;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile</h1>
+    <h1>Tablet</h1>
+    <h1>Desktop</h1>
+</body>
+</html>

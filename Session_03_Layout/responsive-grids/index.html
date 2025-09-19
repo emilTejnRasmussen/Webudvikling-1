@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grid Exercise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Roboto, Arial;
+            padding: 2rem;
+            background: #f6f7fb;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            aspect-ratio: 1 / 1;
+        }
+
+        .grid {
+            /* YOUR CODE HERE */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="grid">
+            <article class="card">1</article>
+            <article class="card">2</article>
+            <article class="card">3</article>
+            <article class="card">4</article>
+            <article class="card">5</article>
+            <article class="card">6</article>
+            <article class="card">7</article>
+            <article class="card">8</article>
+            <article class="card">9</article>
+        </section>
+    </main>
+</body>
+</html>

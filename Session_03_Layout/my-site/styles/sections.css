@@ -1,0 +1,68 @@
+/* sections.css */
+
+/* ===== GENERIC SECTION ===== */
+.section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ===== LANDING ===== */
+#landing {
+  background-color: var(--section-landing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.landing-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-text);
+}
+
+.landing-text p {
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+#emil {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  object-fit: cover;
+  transform: rotateY(180deg);
+}
+
+/* ===== ABOUT ===== */
+#about {
+  background-color: var(--section-about);
+  text-align: center;
+}
+
+.about-container p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ===== PROJECTS / MORE / CONTACT ===== */
+.section-dark {
+  background-color: var(--section-projects);
+  color: var(--dark-section-text);
+}

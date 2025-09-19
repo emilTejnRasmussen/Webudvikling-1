@@ -1,0 +1,96 @@
+/* layout.css */
+
+/* ===== HEADER ===== */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  padding: 0 2rem;
+  background-color: var(--nav-color);
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  z-index: 100;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
+}
+
+header:first-child,
+header:last-child {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-color);
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+  width: 60%;
+  padding: 0;
+}
+
+nav li {
+  width: 100%;
+  background-color: var(--nav-color);
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: #acacac;
+  font-size: 1.4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2.5rem;
+}
+
+nav a:hover {
+  background-color: #acacac;
+  color: var(--nav-color);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--nav-color);
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ===== CONTAINERS ===== */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
