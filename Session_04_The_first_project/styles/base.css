@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #F6F9FC;
+  --default-text-color: #525F7F;
+  --header-font-color: #747fe0;
+  --header-font-family: Monaco, Consolas, Lucida Console, monospace;
+  --hover-color: #949DE6;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--default-text-color);
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-font-color);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+
