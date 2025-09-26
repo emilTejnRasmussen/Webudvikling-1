@@ -1,38 +1,61 @@
-h1  {
-    color: var(--header-font-color);
-    font-family: var(--header-font-family);
+h1 {
+  color: var(--header-font-color);
+  font-family: var(--header-font-family);
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin:  0 15% 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-header p{
-    line-height: 40px;
-    font-weight: 200;
+header p {
+  line-height: 40px;
+  font-weight: 200;
 }
 
 nav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 4rem;
-    margin: 1rem 1rem 8rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4rem;
+  margin: 1rem 1rem 8rem;
 }
 
 nav a {
-    color: var(--default-text-color);
-    font-size: larger;
-    font-weight: 100;
+  color: var(--default-text-color);
+  font-size: larger;
+  font-weight: 100;
 }
 
 nav a:hover {
-    color: var(--header-font-color);
-    text-decoration: underline;
+  color: var(--header-font-color);
+  text-decoration: underline;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.container-site-width {
+    
+  margin: 0 15% 4rem;
+}
+
+
+
+@media (width > 1024px) {
+  .container-site-width {
+    margin: 0 25% 4rem;
+  }
+}
+
+@media (width < 624px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 

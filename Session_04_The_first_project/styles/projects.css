@@ -1,11 +1,9 @@
-#projects {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-
-  margin: 0 15% 4rem;
 }
 
 .break-line {
@@ -63,13 +61,24 @@
   padding: 0.1rem 0.5rem;
 }
 
+.card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card-buttons a {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  align-self: center;
   border-radius: 4px;
   padding: 0.7rem 0.7rem;
   font-weight: 200;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  min-width: 150px;
 }
 
 .card-buttons a:nth-child(1) {
@@ -84,8 +93,10 @@
 
 .card-buttons a:nth-child(1):hover {
   background-color: var(--hover-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card-buttons a:nth-child(2):hover {
   color: var(--hover-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

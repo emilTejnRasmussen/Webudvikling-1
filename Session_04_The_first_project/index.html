@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="styles/projects.css" />
   </head>
   <body>
-    <header>
+    <header class="container-site-width">
       <nav>
+        <a href="pages/cv.html">CV</a>
         <a href="#projects">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#contact-me">Contact</a>
       </nav>
       <h1>> Emil Tejn Rasmussen</h1>
       <p>
         I am a Software Engineer Trainee at VIA University College. My passion
         is building simple, beautiful user experiences. Check out my
-        <a href="#">side-projects</a>
+        <a href="#projects">side-projects</a>
         below.
       </p>
     </header>
 
-    <main>
+    <main class="container-site-width">
       <section id="terminal">
         <div id="top">
           <div class="circle"></div>
@@ -55,7 +56,7 @@
           </div>
           <div class="content">
             <h3>> Emil.resume</h3>
-            <p>"<a href="#">emilTejnRasmussen.cv</a>"</p>
+            <p>"<a href="pages/cv.html">emilTejnRasmussen.cv</a>"</p>
           </div>
           <div class="content">
             <h3>> Emil.interest</h3>
@@ -77,39 +78,120 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects" class="center">
         <h2>Projects</h2>
         <div class="break-line"></div>
 
         <div class="flex-container">
           <div class="card">
             <div class="card-text">
-              <h3>Project name</h3>
+              <h3>Navigation bar</h3>
               <p>
-                Project Description: "Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."
+                This project is a fully responsive navigation bar designed to
+                provide a clean and user-friendly browsing experience. It
+                includes an intuitive layout with organized links, smooth hover
+                effects, and a design that adapts seamlessly across different
+                screen sizes.
               </p>
               <ul>
                 <li>HTML5</li>
                 <li>CSS</li>
               </ul>
               <div class="card-buttons">
-                <a href="#">Live demo</a>
-                <a href="#">View source</a>
+                <a
+                  href="https://emiltejnrasmussen.github.io/Webudvikling-1/Session_03_Layout/navigation-bar-with-flexbox/index.html"
+                  target="_blank"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/emilTejnRasmussen/Webudvikling-1/tree/main/Session_03_Layout/navigation-bar-with-flexbox"
+                  target="_blank"
+                  ><img style="width: 16px" src="Images/github-icon-2.svg" />
+                  View source</a
+                >
               </div>
             </div>
           </div>
-          <div class="card"></div>
-          <div class="card"></div>
+
+          <div class="card">
+            <div class="card-text">
+              <h3>Basic responsiveness</h3>
+              <p>
+                This project is a simple responsive website created to
+                demonstrate the fundamentals of adaptive web design. The site
+                showcases EcoBottle, a sustainable water bottle startup, with
+                clear sections introducing the brand, its mission, and product
+                benefits. Using semantic HTML and basic CSS, the layout adjusts
+                fluidly across different screen sizes, ensuring content is easy
+                to read and images scale properly on desktops, tablets, and
+                mobile devices.
+              </p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+              </ul>
+              <div class="card-buttons">
+                <a
+                  href="https://emiltejnrasmussen.github.io/Webudvikling-1/Session_03_Layout/basic-responsiveness/index.html"
+                  target="_blank"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/emilTejnRasmussen/Webudvikling-1/tree/main/Session_03_Layout/basic-responsiveness"
+                  target="_blank"
+                  ><img style="width: 16px" src="Images/github-icon-2.svg" />
+                  View source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-text">
+              <h3>My Projects</h3>
+              <p>
+                This project is a personal project hub designed to organize and
+                display all my web development exercises and assignments. The
+                website is structured into sessions, each containing links to
+                individual projects such as HTML basics, CSS styling and responsive
+                layouts. The layout is simple, clear,
+                and responsive, making it easy to navigate through different
+                sections
+              </p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+              </ul>
+              <div class="card-buttons">
+                <a
+                  href="https://emiltejnrasmussen.github.io/Webudvikling-1/"
+                  target="_blank"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/emilTejnRasmussen/Webudvikling-1/tree/main"
+                  target="_blank"
+                  ><img style="width: 16px" src="Images/github-icon-2.svg" />
+                  View source</a
+                >
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
+
+      <section id="contact-me" class="center">
+        <h2>Contact me!</h2>
+        <div class="break-line"></div>
+        <div id="contact-details" class="flex-container">
+          <p><a href="mailto:362617@via.dk">362617@via.dk</a> || 
+          <a href="https://dk.linkedin.com/" target="_blank">LinkedIn</a> || 
+          <a href="https://github.com/emilTejnRasmussen" target="_blank"><img style="width: 20px; vertical-align:middle;" src="Images/github-icon-2.svg" /> GitHub</a></p>
+        </div>
+      </section>
+
     </main>
-    <footer></footer>
+    <footer class="container-site-width center"> <p>Made by Emil Tejn Rasmussen © 2025</p></footer>
   </body>
 </html>
