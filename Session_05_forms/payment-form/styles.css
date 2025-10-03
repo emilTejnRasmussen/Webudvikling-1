@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --surface-2: #fff;
+  --text-1: #010101;
+  --border: 2px solid grey;
+}
+
+body {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5em;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input {
+  background: var(--surface-2);
+  color: var(--text-1);
+  border: var(--border);
+  border-radius: 16px;
+  padding: 1ex 2ex;
+  width: 100%;
+
+  outline: 3px solid var(--border);
+}
+
+button {
+  padding: 1ex 2ex;
+  border-radius: 10px;
+  background-color: #53abf3;
+  color: white;
+  border: #53abf3;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem; /* afstand mellem expiry og cvv */
+  align-items: flex-end; /* gør dem pænt justeret i bunden */
+}
+
+.expiry,
+.cvv {
+  display: flex;
+  flex-direction: column; /* label over felt */
+}
+
+.expiry-fields {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* faste bredder til små felter */
+#month-expire {
+  width: 4rem; /* lille dropdown til MM */
+}
+
+#year-expire {
+  width: 6rem; /* lidt større til YYYY */
+}
+
+#cvv {
+  width: 5rem; /* 3 cifre + lidt luft */
+}
+
+input:user-valid,
+select:user-valid{
+    outline: 3px solid #24fc7e;
+}
+input:user-invalid,
+select:user-invalid{
+    outline: 3px solid #dd5e37;
+}
+
+button:hover {
+    background-color: #5eaef0;
+}

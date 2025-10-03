@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Payment Details</h1>
+      <form action="/payment-made" method="post">
+        <div class="form-group">
+          <label for="name">Cardholder name</label>
+          <input id="name" name="name" required/>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card number</label>
+          <input
+            id="card-number"
+            name="card-number"
+            required
+            pattern="\d{16}|\d{4}\s?\d{4}\s?\d{4}\s?\d{4}"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="expiry">
+            <label for="month-expire">Expiry date</label>
+            <div class="expiry-fields">
+              <select id="month-expire" name="month-expire" required>
+                <option value="" disabled selected>MM</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <input
+                id="year-expire"
+                name="year-expire"
+                required
+                pattern="\d{4}"
+                placeholder="YYYY"
+              />
+            </div>
+          </div>
+
+          <div class="cvv">
+            <label for="cvv">CVV</label>
+            <input
+              id="cvv"
+              name="cvv"
+              required
+              pattern="\d{3}"
+              placeholder="123"
+            />
+          </div>
+        </div>
+
+        <button>Pay now</button>
+      </form>
+    </main>
+  </body>
+</html>

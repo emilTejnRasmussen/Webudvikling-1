@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Create Account</title>
+            <style>
+                :root {
+                    --primary: hsl(211, 100%, 50%);
+                    --valid: hsl(143, 100%, 26%);
+                    --invalid: hsl(348, 55%, 49%);
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                input, button {
+                    font: inherit;
+                }
+
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    margin: 0px;
+                    background: #f0f2f5;
+                    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                form {
+                    background: #fff;
+                    padding: 40px;
+                    border-radius: 18px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                }
+
+                h2 {
+                    text-align: center;
+                    margin-bottom: 40px;
+                    color: #555;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 6px;
+                    color: #555;
+                    font-weight: 500;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 12px 15px;
+                    margin-bottom: 20px;
+                    border: 0px solid;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    outline: 3px solid rgba(0, 123, 255, 0.2);
+                }
+
+                button {
+                    width: 100%;
+                    padding: 12px;
+                    background-color: var(--primary);
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                input:user-valid {
+                    outline: 3px solid rgba(96, 238, 108, 0.719);
+                }
+
+                input:user-invalid {
+                    outline: 3px solid rgba(235, 89, 5, 0.849);
+                }
+            </style>
+        </head>
+        <body>
+            <form action="/submit" method="post">
+                <h2>Create an Account</h2>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" maxlength="50" autofocus />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" />
+
+                <button>Create Account</button>
+            </form>
+        </body>
+    </html>
