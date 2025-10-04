@@ -1,0 +1,68 @@
+#contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+#contact-site {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1240px) {
+  #contact-site {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: grid;
+  grid-area: 0.5em;
+}
+
+label {
+  color: aliceblue;
+}
+
+input,
+select {
+    border-radius: 8px;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid gray;
+    outline: 3px solid var(--header-font-color);
+}
+
+input[type="checkbox"]{
+    outline: none;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.75rem;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1rem;
+  outline: 3px solid var(--header-font-color);
+}
+
+button {
+    border-radius: 8px;
+    padding: 0.5em;
+    font-size: 1rem;
+    background-color: var(--header-font-color);
+    color: #fff;
+}
+
+input:not([type="checkbox"]):user-valid,
+select:user-valid,
+textarea:user-valid {
+    outline: 3px solid #33C948;
+}
+
+input:not([type="checkbox"]):user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    outline: 3px solid #F96256;
+}
