@@ -44,4 +44,12 @@ a:hover {
   color: var(--hover-color);
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 

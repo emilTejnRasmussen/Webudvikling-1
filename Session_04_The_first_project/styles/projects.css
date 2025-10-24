@@ -1,10 +1,4 @@
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 
 .break-line {
   width: 4rem;
@@ -99,4 +93,10 @@
 .card-buttons a:nth-child(2):hover {
   color: var(--hover-color);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (width < 624px) {
+    .card p {
+    display: none;
+    }
 }

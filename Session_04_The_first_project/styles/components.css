@@ -14,23 +14,42 @@ header p {
   font-weight: 200;
 }
 
-nav {
+nav ul {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   margin: 1rem 1rem 8rem;
 }
 
+nav li {
+  min-width: 85px;
+  list-style: none;
+  
+}
+
 nav a {
+  display: flex;
+  justify-content: center;
   color: var(--default-text-color);
   font-size: larger;
   font-weight: 100;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  
 }
 
 nav a:hover {
   color: var(--header-font-color);
-  text-decoration: underline;
+  background-color: #f5f4f7;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  transform: translateY(-2px)
+}
+
+.active-nav{
+  background-color: var(--header-font-color);
+  color: #f5f4f7;
 }
 
 main {
@@ -42,6 +61,14 @@ main {
 .container-site-width {
     
   margin: 0 15% 4rem;
+}
+
+#thank-you-page {
+  gap: 1rem;
+
+  & h2 {
+    color: rgb(20, 20, 20);
+  }
 }
 
 
@@ -56,6 +83,22 @@ main {
   h1 {
     font-size: 2.5rem;
   }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  nav li{
+    min-width: 65px;
+    
+  }
+
+  nav a {
+    font-size: smaller;
+    padding: 0rem 0.2rem;
+  }
 }
+
+
 
 

@@ -1,0 +1,46 @@
+
+#cv-container {
+    border: 3px solid var(--header-font-color);
+    border-top: none;
+    padding: 2.5rem;
+}
+
+
+
+#cv-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media(max-width: 1200px){
+        grid-template-columns: 1fr;
+    }
+}
+
+img{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#cv-container h2 {
+    color: var(--header-font-color);
+}
+
+#cv-container h3 {
+    color: grey;
+}
+
+#cv-container h4 {
+    color: black;
+    font-size: 1.3rem;
+}
+
+#cv-container p {
+    color: gray;
+    font-size: 1rem;
+}
+
+#cv-container .cv-small-header {
+    color: black;
+    font-size: 1.2rem;
+}
+
