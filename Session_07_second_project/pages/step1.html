@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Emil, Julie og Maja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pet Adoption App" />
+    <title>Pet Adoption App</title>
+    <link rel="stylesheet" href="../styles/base.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/form-light.css" />
+  </head>
+  <body>
+    <main class="center">
+      <form method="get" action="step2.html">
+        <section id="form-header">
+          <header>
+            <h1>Pet Adoption App</h1>
+          </header>
+          <div class="form-image center">
+            <img
+              src="../images/dog.png"
+              alt="Illustrated dog"
+              id="form-header-img"
+            />
+          </div>
+        </section>
+
+        <section id="form-body">
+          <div class="progress-bar">
+            <div class="progress step1"></div>
+            <img
+              src="../images/cat1.png"
+              alt="Cat progress"
+              class="cat-progress"
+            />
+          </div>
+
+          <fieldset class="flex">
+            <label for="first name" class="header">First name:</label>
+            <input
+              id="first name"
+              identifier
+              name="first name"
+              type="text"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="flex">
+            <label for="last name" class="header">Last name:</label>
+            <input id="last name" name="last name" type="text" required />
+          </fieldset>
+
+          <fieldset class="flex">
+            <label for="email" class="header">Email:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="name@example.com"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="flex">
+            <label for="phone" class="header">Phone number:</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              pattern="^(\+45\s?)?\d{8}$"
+              title="Write 8 digits or +45 followed by 8 digits"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="flex">
+            <label for="visit" class="header">Choose a day to visit:</label>
+            <input id="visit" name="visit" type="date" required />
+          </fieldset>
+
+          <div class="form-footer bottom">
+            <button type="submit" formaction="step1.html" class="btn-prev hidden">
+              Prev
+            </button>
+            <img
+              id="form-footer-img"
+              src="../images/dog.png"
+              alt="Cute and happy dog"
+            />
+            <button type="submit" class="btn-next">Next</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

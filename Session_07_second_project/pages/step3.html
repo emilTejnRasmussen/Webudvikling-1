@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet adoption app</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/form-light.css" />
+  </head>
+  <body>
+    <main class="center">
+      <form method="get" action="thank-you-page.html">
+        <section id="form-header">
+          <header>
+            <h1>Pet Adoption App</h1>
+          </header>
+          <div class="form-image center">
+            <img
+              src="../images/dog.png"
+              alt="Illustrated dog"
+              id="form-header-img"
+            />
+          </div>
+        </section>
+
+        <section id="form-body">
+          <div class="progress-bar">
+            <div class="progress step3"></div>
+            <img
+              src="../images/cat3.png"
+              alt="Cat progress"
+              class="cat-progress"
+            />
+          </div>
+
+          <fieldset class="form-field">
+            <legend class="header">Choose your preferred pet type</legend>
+
+            <div class="option">
+              <input
+                type="radio"
+                id="valg-dog"
+                name="preferred-pet"
+                value="dog"
+              />
+              <label for="valg-dog">Dog</label>
+            </div>
+
+            <div class="option">
+              <input
+                type="radio"
+                id="valg-rabbit"
+                name="preferred-pet"
+                value="rabbit"
+              />
+              <label for="valg-rabbit">Rabbit</label>
+            </div>
+
+            <div class="option">
+              <input
+                type="radio"
+                id="valg-cat"
+                name="preferred-pet"
+                value="cat"
+              />
+              <label for="valg-cat">Cat</label>
+            </div>
+
+            <div class="option">
+              <input
+                type="radio"
+                id="valg-reptile"
+                name="preferred-pet"
+                value="reptile"
+              />
+              <label for="valg-reptile">Reptile</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <fieldset class="form-field">
+              <label for="option-size" class="header">Size/Type</legend>
+              <select id="option-size">
+                <optgroup label="Dog">
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                </optgroup>
+
+                <optgroup label="Cat"></optgroup>
+                <option>Long-haired</option>
+                <option>Short-haired</option>
+                <option>No hair</option>
+
+                <optgroup label="Rabbit">
+                  <option>Dwarf</option>
+                  <option>Standard</option>
+                  <option>Giant</option>
+                </optgroup>
+
+                <optgroup label="Reptile">
+                  <option>Lizard</option>
+                  <option>Snake</option>
+                  <option>Tortoise</option>
+                </optgroup>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-field">
+              <label class="header" for="option-age">Age</legend>
+              <select id="option-age">
+                <option>Young</option>
+                <option>Adult</option>
+                <option>Elder</option>
+              </select>
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="form-field checkbox-grid">
+            <legend class="header">Characteristics</legend>
+            <label for="affectionate"
+              ><input
+                type="checkbox"
+                id="affectionate"
+                name="characteristics"
+                value="affectionate"
+              />
+              Affectionate</label
+            >
+            <label for="active"
+              ><input
+                type="checkbox"
+                id="active"
+                name="characteristics"
+                value="active"
+              />
+              Active</label
+            >
+
+            <label for="playful"
+              ><input
+                type="checkbox"
+                id="playful"
+                name="characteristics"
+                value="playful"
+              />
+              Playful</label
+            >
+            <label for="protective"
+              ><input
+                type="checkbox"
+                id="protective"
+                name="characteristics"
+                value="protective"
+              />
+              Protective</label
+            >
+
+            <label for="clever"
+              ><input
+                type="checkbox"
+                id="clever"
+                name="characteristics"
+                value="clever"
+              />
+              Clever</label
+            >
+            <label for="independent"
+              ><input
+                type="checkbox"
+                id="independent"
+                name="characteristics"
+                value="independent"
+              />
+              Independant</label
+            >
+
+            <label for="couch"
+              ><input
+                type="checkbox"
+                id="couch"
+                name="characteristics"
+                value="couch"
+              />
+              Couch potato</label
+            >
+            <label for="loyal"
+              ><input
+                type="checkbox"
+                id="loyal"
+                name="characteristics"
+                value="loyal"
+              />
+              Loyal</label
+            >
+
+            <label for="kidfriendly"
+              ><input
+                type="checkbox"
+                id="kidfriendly"
+                name="characteristics"
+                value="kidfriendly"
+              />
+              Kid friendly</label
+            >
+            <label for="trainable"
+              ><input
+                type="checkbox"
+                id="trainable"
+                name="characteristics"
+                value="trainable"
+              />
+              Trainable</label
+            >
+
+            <label for="indoor"
+              ><input
+                type="checkbox"
+                id="indoor"
+                name="characteristics"
+                value="indoor"
+              />
+              Indoor</label
+            >
+            <label for="outdoor"
+              ><input
+                type="checkbox"
+                id="outdoor"
+                name="characteristics"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+
+          <div class="form-footer bottom">
+            <button type="submit" formaction="step2.html" class="btn-prev">
+              Prev
+            </button>
+            <img
+              src="../images/dog.png"
+              alt="Illustrated dog"
+              id="form-footer-img"
+            />
+            <button type="submit" class="btn-next">Send</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
