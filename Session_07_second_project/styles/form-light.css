@@ -60,11 +60,11 @@ form {
   position: relative;
   width: 100%;
   height: 40px;
-  background-image: url("/Session_07_second_project/images/progress-bg.png");
+  background-image: url("../images/progress-bg.png");
 
   & .progress {
     height: 40px;
-    background-image: url("/Session_07_second_project/images/progress-bg-active.png");
+    background-image: url("../images/progress-bg-active.png");
     background-size: cover;
   }
 
