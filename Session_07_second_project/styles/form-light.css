@@ -7,6 +7,7 @@ form {
   background-color: var(--c-canvas-highlight);
   border-radius: 15px;
   margin: 0 4rem;
+  
 }
 
 /* Form header */
@@ -122,15 +123,14 @@ form {
   background-color: var(--c-button-face);
   border-color: var(--c-button-border);
   color: var(--c-button-text);
-  border: 2px solid var();
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
 }
-.btn-prev:hover,
-.btn-next:hover {
-  /* Tilføj eventuel hover effect */
+
+.option-grid {
+  grid-template-columns: 1fr;
 }
 
 /* UTILITY */
@@ -140,11 +140,11 @@ form {
 
 /* Validate */
 .validate:user-valid {
-  outline: 3px solid #24fc7e;
+  outline: 3px solid var(--c-succes);
 }
 
 .validate:user-invalid {
-  outline: 3px solid #dd5e37
+  outline: 3px solid var(--c-danger)
 }
 
 
@@ -155,12 +155,19 @@ textarea, select {
   padding: 0.3rem;
   background-color: var(--c-input-bg);
   border: 3px solid var(--c-input-border);
-  color: var(--light-color);
+  color: var(--c-light-text);
 }
 
 textarea {
   height: 4lh;
   width: 100%;
+  resize: none;
+}
+
+select {
+  width: 80%;
+  color: var(--c-button-text);
+  font-weight: 300;
 }
 
 input[type="range"] {
@@ -208,7 +215,7 @@ datalist {
   form {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
-    max-width: 900px;
+    max-width:900px;
   }
 
   #form-header {
@@ -234,5 +241,9 @@ datalist {
 
   .checkbox-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .option-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

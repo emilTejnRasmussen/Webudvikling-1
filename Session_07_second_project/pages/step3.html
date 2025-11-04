@@ -77,41 +77,45 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-field">
-            <fieldset class="form-field">
-              <label for="option-size" class="header">Size/Type</legend>
-              <select id="option-size">
+          <fieldset class="form-field option-grid">
+            <fieldset class="flex">
+              <label for="option-size" class="header">Size/Type</label>
+              <select id="option-size" name="option-size">
+                <option value="" disabled selected>-- Select a type --</option>
+
                 <optgroup label="Dog">
-                  <option>Small</option>
-                  <option>Medium</option>
-                  <option>Large</option>
+                  <option value="dog-small">Small</option>
+                  <option value="dog-medium">Medium</option>
+                  <option value="dog-large">Large</option>
                 </optgroup>
 
-                <optgroup label="Cat"></optgroup>
-                <option>Long-haired</option>
-                <option>Short-haired</option>
-                <option>No hair</option>
+                <optgroup label="Cat">
+                  <option value="cat-long-haired">Long-haired</option>
+                  <option value="cat-short-haired">Short-haired</option>
+                  <option value="cat-no-hair">No hair</option>
+                </optgroup>
 
                 <optgroup label="Rabbit">
-                  <option>Dwarf</option>
-                  <option>Standard</option>
-                  <option>Giant</option>
+                  <option value="rabbit-dwarf">Dwarf</option>
+                  <option value="rabbit-standard">Standard</option>
+                  <option value="rabbit-giant">Giant</option>
                 </optgroup>
 
                 <optgroup label="Reptile">
-                  <option>Lizard</option>
-                  <option>Snake</option>
-                  <option>Tortoise</option>
+                  <option value="reptile-lizard">Lizard</option>
+                  <option value="reptile-snake">Snake</option>
+                  <option value="reptile-tortoise">Tortoise</option>
                 </optgroup>
               </select>
             </fieldset>
 
-            <fieldset class="form-field">
-              <label class="header" for="option-age">Age</legend>
-              <select id="option-age">
-                <option>Young</option>
-                <option>Adult</option>
-                <option>Elder</option>
+            <fieldset class="flex">
+              <label class="header" for="option-age">Age</label>
+              <select id="option-age" name="option-age">
+                <option value="" disabled selected>-- Select a type --</option>
+                <option value="age-young">Young</option>
+                <option value="age-adult">Adult</option>
+                <option value="age-elder">Elder</option>
               </select>
             </fieldset>
           </fieldset>
