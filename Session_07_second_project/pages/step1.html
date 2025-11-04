@@ -38,6 +38,7 @@
           <fieldset class="flex">
             <label for="first name" class="header">First name:</label>
             <input
+              class="validate"
               id="first name"
               identifier
               name="first name"
@@ -48,16 +49,19 @@
 
           <fieldset class="flex">
             <label for="last name" class="header">Last name:</label>
-            <input id="last name" name="last name" type="text" required />
+            <input class="validate" id="last name" name="last name" type="text" required />
           </fieldset>
 
           <fieldset class="flex">
             <label for="email" class="header">Email:</label>
             <input
+            class="validate"
               id="email"
               name="email"
               type="email"
+              pattern="^[^@\s]+@[^@\s]+\.[a-z]{2,}$"
               placeholder="name@example.com"
+              title="Enter your email address (e.g. name@example.com)"
               required
             />
           </fieldset>
@@ -65,18 +69,19 @@
           <fieldset class="flex">
             <label for="phone" class="header">Phone number:</label>
             <input
+            class="validate"
               id="phone"
               name="phone"
               type="tel"
-              pattern="^(\+45\s?)?\d{8}$"
-              title="Write 8 digits or +45 followed by 8 digits"
+              pattern="(\d{8}|\d{2}\s?\d{2}\s?\d{2}\s?\d{2})$"
+              title="Write 8 digits"
               required
             />
           </fieldset>
 
           <fieldset class="flex">
             <label for="visit" class="header">Choose a day to visit:</label>
-            <input id="visit" name="visit" type="date" required />
+            <input class="validate" id="visit" name="visit" type="date" required />
           </fieldset>
 
           <div class="form-footer bottom">

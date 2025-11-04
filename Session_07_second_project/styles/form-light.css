@@ -138,40 +138,15 @@ form {
   margin-top: auto; /* skubber alt over knappperne op */
 }
 
-
-/* Desktop og op */
-@media (min-width: 820px) {
-  form {
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
-    max-width: 900px;
-  }
-
-  #form-header {
-    border-radius: 15px 0 0 15px;
-
-    & .form-image {
-      display: block;
-      padding: 4rem 1rem;
-    }
-  }
-
-  #form-body {
-    border-radius: 15px;
-
-    & #form-footer-img {
-      visibility: hidden;
-    }
-  }
-
-  .progress-bar {
-    width: 100%;
-  }
-
-  .checkbox-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+/* Validate */
+.validate:user-valid {
+  outline: 3px solid #24fc7e;
 }
+
+.validate:user-invalid {
+  outline: 3px solid #dd5e37
+}
+
 
 /* FORM ELEMENTS */
 input,
@@ -225,4 +200,39 @@ datalist {
   color: var(--c-input-border);
   font: inherit;
   margin: 0 1% 0 1%;
+}
+
+
+/* Desktop og op */
+@media (min-width: 820px) {
+  form {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    max-width: 900px;
+  }
+
+  #form-header {
+    border-radius: 15px 0 0 15px;
+
+    & .form-image {
+      display: block;
+      padding: 4rem 1rem;
+    }
+  }
+
+  #form-body {
+    border-radius: 15px;
+
+    & #form-footer-img {
+      visibility: hidden;
+    }
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
