@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Color Picker App</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: 0px;
+            }
+
+            body {
+                display: flex;
+                height: 100dvh;
+                font-family: Arial;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                text-align: center;
+                padding: 2rem;
+                border-radius: 1rem;
+                background-color: rgba(255, 255, 255, 0.8);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .controls {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Color Picker</h1>
+            <div class="controls">
+                <label> R: <input type="number" value="255" /> </label>
+                <label> G: <input type="number" value="255" /> </label>
+                <label> B: <input type="number" value="255" /> </label>
+                <button id="randomColor">Random Color</button>
+            </div>
+        </div>
+
+        <script>
+            const inputs = document.querySelectorAll("input")
+            const randomColorBtn = document.getElementById("randomColor")
+
+            function updateUI(r, g, b) {
+                document.body.style.background = "rgb(" + r + ", " + g + ", " + b + ")"
+                inputs[0].value = r
+                inputs[1].value = g
+                inputs[2].value = b
+            }
+
+            function clampInput(e) {
+                e.target.value = Math.max(0, Math.min(e.target.value, 255))
+            }
+
+            function randomColorIntensity() {
+                return Math.floor(Math.random() * 256)
+            }
+
+            // Your code here
+            randomColorBtn.addEventListener("click", () => {
+                let r = randomColorIntensity()
+                let g = randomColorIntensity()
+                let b = randomColorIntensity()
+                updateUI(r, g, b)
+            })
+
+            for (const input of inputs) {
+                input.addEventListener("input", e => {
+                    clampInput(e)
+                    updateUI(inputs[0].value, inputs[1].value, inputs[2].value)
+                })}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Dynamic HTML Content</title>
+    </head>
+    <body>
+        <h2>Latest Blog Post</h2>
+        <button>Load Post</button>
+        <div id="post"></div>
+
+        <script>
+            const button = document.querySelector("button")
+            const postContainer = document.querySelector("#post")
+
+            const fakeServerResponse =
+                 "<h3>How to Stay Productive!</h3><p>Here are three tips to stay productive:</p><ul><li><strong>Sleep like a Snorlax:</strong> Recharge fully so you can tackle your tasks with full energy.</li><li><strong>Chocolate power-up:</strong> Reward yourself with a little chocolate to boost your focus and energy.</li><li><strong>Stay hydrated like Squirtle:</strong> Drink water regularly to keep your brain and body in top shape!</li></ul>";
+
+            // Your code here
+            button.addEventListener("click", e => {
+                postContainer.innerHTML = fakeServerResponse
+            })
+
+        </script>
+    </body>
+</html>

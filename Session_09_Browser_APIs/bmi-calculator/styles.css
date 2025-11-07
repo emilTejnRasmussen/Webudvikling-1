@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: #d6ccc2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #505050;
+}
+
+main {
+background-color: #edede9;
+padding: 2rem 4rem;
+border-radius: 15px;
+border: 4px solid #838282;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    
+    gap: 0.5rem;
+    margin: 2em 4em 2em 0;
+
+}
+
+button,
+input{
+    padding: 0.5em 1.5em;
+    width: 100%;
+    max-width: 10rem;
+    font: inherit;
+}
+
+img{
+    max-width: 16rem;
+}
+
+#bmi-result{
+    width: 140px;
+}
+
+
+.danger{
+    color: #eb5353;
+    text-decoration: underline 5px #eb5353;
+}
+
+.ok {
+    
+    text-decoration: underline 5px #f1dd24;
+}
+
+.normal{
+    text-decoration: underline 5px #87f379;
+}

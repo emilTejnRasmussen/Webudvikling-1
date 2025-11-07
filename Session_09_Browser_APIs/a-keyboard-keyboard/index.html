@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Keyboard Keyboard!</title>
+        <style>
+            body {
+                color: #485042;
+                display: flex;
+                height: 100dvh;
+                flex-direction: column;
+                margin: 0;
+                font-family: "Segoe UI";
+                background-color: #aec2a0;
+                justify-content: center;
+                align-items: center;
+                touch-action: manipulation;
+            }
+
+            #keyboard {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 2rem;
+                background: #dfdfdf;
+                border-radius: 1rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                margin: 1rem;
+            }
+
+            button {
+                padding: 1rem;
+                font-size: 2rem;
+                border: none;
+                border-radius: 8px;
+                background-color: #fff;
+                color: #485042;
+                cursor: pointer;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                outline: none;
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                margin: 0.5rem;
+            }
+
+            #psst {
+                font-size: 1.2rem;
+                margin-top: 5rem;
+                font-style: italic;
+                text-align: center;
+            }
+
+            button:active,
+            .active {
+                box-shadow: none;
+                border: 2px solid #dfdfdf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Keyboard Keyboard!</h1>
+        <div id="keyboard">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+        </div>
+        <div id="psst">
+            ...Psst!:
+            <p>2-3-4-2-6-6-5</p>
+            <p>1-2-3-1-5-5-4-3-2</p>
+            <p>2-2-4-2-4-5-3-2-1-1-5-4</p>
+            <p>2-3-4-2-6-6-5</p>
+            <p>1-2-3-1-8-3-4-3-2</p>
+            <p>2-3-4-2-4-5-3-2-1-1-5-4</p>
+        </div>
+    </body>
+</html>
+<script>
+    const sounds = [
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/c4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/d4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/e4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/f4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/g4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/a4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/b4.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/c5.mp3"),
+        new Audio("https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/d5.mp3"),
+    ]
+
+    function playSound(i) {
+        if (sounds[i]) {
+            sounds[i].currentTime = 0
+            sounds[i].play()
+        }
+    }
+
+    // Your code here
+    const buttons = document.querySelectorAll("button")
+
+    document.addEventListener("keyup", e => {
+        const key = e.key;
+        if(key < 1 || key > 9) return;
+        playSound(key-1)
+    })
+
+    for (const button of buttons) {
+        button.addEventListener("pointerdown", e => {
+            playSound(Number(e.target.textContent) - 1)
+        })
+    }
+</script>
