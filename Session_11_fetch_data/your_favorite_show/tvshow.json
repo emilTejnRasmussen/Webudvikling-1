@@ -1,0 +1,22 @@
+{
+  "title": "White color",
+  "seasons": 6,
+  "genre": [
+    "Crime",
+    "Drama",
+    "Romance",
+    "Comedy",
+    "Mystery",
+    "Police Drama",
+    "Adventure",
+    "Soap Opera"
+  ],
+  "charachters": [
+    { "name": "Neal Caffrey", "actor": "Matt Bomer" },
+    { "name": "Mozzie", "actor": "Willie Garson" },
+    { "name": "Peter Burke", "actor": "Tim DeKay" },
+    { "name": "Sara Ellis", "actor": "Hilarie Burton" },
+    { "name": "Matthew Keller", "actor": "Ross McCall" }
+  ],
+  "isRunning": false
+}

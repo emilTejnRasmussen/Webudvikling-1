@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>TV Show Characters</title>
+    </head>
+    <body>
+        <h1>Main Characters</h1>
+        <ul id="characterList"></ul>
+        <script>
+            // Your code here
+            const list = document.querySelector("#characterList")
+            fetch("../your_favorite_show/tvshow.json")
+                .then(response => response.json())
+                .then(show => {
+                    const charachters = show.charachters
+                    for (const charachter of charachters) {
+                        list.innerHTML += "<li>" + charachter.name + "</li>"
+                    }
+                })
+        </script>
+    </body>
+</html>

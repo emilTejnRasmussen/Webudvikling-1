@@ -1,0 +1,60 @@
+#upgrade-panel {
+    width: 350px;
+    background: #2b2b2b;
+    padding: 35px 20px;
+    border-radius: 0 15px 15px;
+    border: 1px solid #444;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.upgrade {
+    background: #1f1f1f;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upgrade-title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.upgrade-desc {
+    color: #bfbfbf;
+    margin: 4px 20px 8px 0;
+    font-size: 0.85rem;
+}
+
+.upgrade-meta {
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    display: flex;
+    gap: 12px;
+}
+
+.upgrade-buy {
+    background: #50fa7b;
+    border: none;
+    padding: 1.2em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    transition: 0.1s;
+}
+
+.upgrade-buy:active {
+    transform: scale(0.95);
+}
+
+#rank-display {
+    color: #50fa7b;  
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}

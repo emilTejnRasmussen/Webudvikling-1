@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Handling Network Errors</title>
+    </head>
+    <body>
+        <p></p>
+        <script>
+            const paragraph = document.querySelector("p")
+            fetch("https://this-domain-does-not-exist.xyz/data.json") // Simulating a server not responding
+                .then(response => response.json())
+                .then(result => (paragraph.textContent = result))
+                // Your code here
+                .catch(error => {
+                    paragraph.textContent = "Error: JSON not found"
+                })
+        </script>
+    </body>
+</html>

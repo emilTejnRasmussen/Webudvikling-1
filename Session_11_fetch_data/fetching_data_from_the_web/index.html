@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Random Dog Viewer</title>
+    </head>
+    <body>
+        <h1>Random Dog Viewer</h1>
+        <button>Get Dog</button>
+        <p id="errorMessage"></p>
+        <img alt="Random dog" />
+
+        <script>
+            const btn = document.querySelector("button")
+            const img = document.querySelector("img")
+            const errorElement = document.querySelector("#errorMessage")
+
+            // Your code here
+            displayRandomDog()
+            btn.addEventListener("click", () => displayRandomDog())
+
+            function displayRandomDog(){
+                fetch("https://dog.ceo/api/breeds/image/random")
+                    .then(response => response.json())
+                    .then(dog => {
+                        img.src = dog.message
+                    })
+                    .catch(error => errorElement.textContent = "Something went wrong")
+            }
+        </script>
+    </body>
+</html>

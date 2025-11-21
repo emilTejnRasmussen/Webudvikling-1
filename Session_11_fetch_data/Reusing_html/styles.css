@@ -1,0 +1,28 @@
+nav {
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #2196f3;
+}
+
+nav ul {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background: #1976d275;
+}
+
+nav a.active {
+    background: #1976d2;
+}

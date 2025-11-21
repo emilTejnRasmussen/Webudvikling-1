@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Hello JSON!</title>
+    </head>
+    <body>
+        <h1>User Info</h1>
+        <p id="name"></p>
+        <p id="age"></p>
+
+        <script>
+            const jsonString = '{"name":"Baby Yoda","age":50}'
+            // Your code here
+            const name = document.querySelector("#name")
+            const age = document.querySelector("#age")
+            const yoda = JSON.parse(jsonString)
+            name.textContent = "Name: " + yoda.name
+            age.textContent = "Age: " + yoda.age
+            
+        </script>
+    </body>
+</html>

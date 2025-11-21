@@ -1,0 +1,47 @@
+.code-view{
+    padding: 4px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 400px;
+    width: 800px;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ide-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1lh;
+    width: 100%;
+    background-color: #292D3D;
+    border-radius: 15px 15px 0 0;
+    padding: 2rem 3rem;
+}
+
+.terminal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    width: 100%;
+    background-color: #1E1F22;
+    border-radius: 0 0 15px 15px;
+    border-top: 2px solid #515152;
+}
+
+.count {
+    background-color: #515152;
+    padding: 0.2em 1em;
+    font-size: smaller;
+    border-radius: 25px;
+}
+
+
+
+h4 {
+    color: #cacaca;
+}
+.line h4{
+    color: #4C546B;
+}

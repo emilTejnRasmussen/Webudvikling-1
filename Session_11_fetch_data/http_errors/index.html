@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Random Dog Viewer</title>
+    </head>
+    <body>
+        <h1>Random Dog Viewer</h1>
+        <button>Get Dog</button>
+        <p id="errorMessage"></p>
+        <img alt="Random dog" />
+        <script>
+            const btn = document.querySelector("button")
+            const img = document.querySelector("img")
+            const errorElement = document.querySelector("#errorMessage")
+
+            btn.addEventListener("click", () => {
+                fetch("https://dog.ceo/api/breeds/video/random") // The API does not contain videos!
+                    .then(response => {
+                        // Your code here
+                        if(!response.ok){
+                            throw new Error("HTTP error " + response.status)
+                        }
+                        return response.json()
+                    })
+                    .then(data => {
+                        img.src = data.message
+                    })
+                    .catch(error => {
+                        errorElement.textContent = "Sorry! Could not fetch a dog image. " + error.message
+                    })
+            })
+        </script>
+    </body>
+</html>

@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idle Compiler</title>
+    <link rel="stylesheet" href="resources/styles/styles.css" />
+    <link rel="stylesheet" href="resources/styles/code_view.css" />
+    <link rel="stylesheet" href="resources/styles/side_menu.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <aside id="upgrade-panel"></aside>
+
+    <main id="main-view" class="center">
+      <div class="center col">
+        <h1>Idle Compiler</h1>
+        <h2>
+          <span id="total-output-points">0</span>
+        </h2>
+        <h3>Output Points (OP)</h3>
+      </div>
+      <div class="code-view">
+        <div class="ide-container">
+          <div class="line">
+            <h4>1 | <span class="editor-line" id="l1-content"></span></h4>
+          </div>
+          <div class="line">
+            <h4>2 | <span class="editor-line" id="l2-content"></span></h4>
+          </div>
+          <div class="line">
+            <h4>3 | <span class="editor-line" id="l3-content"></span></h4>
+          </div>
+          <div class="line">
+            <h4>4 | <span class="editor-line" id="l4-content"></span></h4>
+          </div>
+          <div class="line">
+            <h4>5 | <span class="editor-line" id="l5-content"></span></h4>
+          </div>
+          <div class="line">
+            <h4>6 | <span class="editor-line" id="l6-content"></span></h4>
+          </div>
+        </div>
+        <div class="terminal-container">
+          <div>
+            <h4>Uni@User_PC ~ > <span id="t1-content"></span></h4>
+          </div>
+          <div>
+            <h4>
+              <span id="t2-content"></span>
+              <span id="execute-count-label"></span>
+            </h4>
+          </div>
+          <div>
+            <h4><span id="t3-content"></span></h4>
+          </div>
+          <div>
+            <h4><span id="t4-content"></span></h4>
+          </div>
+        </div>
+      </div>
+      <div id="main-btn-border" class="center">
+        <div id="main-btn" class="center">
+          <h3 id="main-btn-text">Build</h3>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
