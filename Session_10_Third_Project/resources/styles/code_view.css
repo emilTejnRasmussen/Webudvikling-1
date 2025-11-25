@@ -45,3 +45,33 @@ h4 {
 .line h4{
     color: #4C546B;
 }
+
+
+.keyword {
+    color: #c792ea;
+}
+
+.function {
+    color: #82aaff;
+}
+
+.property {
+    color: #ffcb6b;
+}
+
+.string {
+    color: #c3e88d;
+}
+
+.symbol {
+    color: #89ddff;
+}
+
+.other {
+    color: #f8f8f2;
+}
+
+.indent{
+    padding-left: 2rem; 
+    display: inline-block; 
+}

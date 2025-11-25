@@ -156,7 +156,7 @@ function buyUpgrade(upg, index) {
     upg.effect.call(upg);
 
     // Increase cost
-    upg.cost = Number(upg.cost * 1.1);
+    upg.cost = Number((upg.cost * 1.1).toFixed(1));
 
     // Update UI
     document.getElementById(`owned-${index}`).textContent = upg.owned;
