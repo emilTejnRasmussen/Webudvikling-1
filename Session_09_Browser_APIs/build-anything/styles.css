@@ -18,6 +18,7 @@
     --b-start-c: #8B0000;
     --b-start-border-c: #C6A667;
 
+    --font-color: #dddcd6;
 
 }
 
@@ -26,10 +27,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 4rem;
 
     background-color: var(--bg-c-d);
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 main {
@@ -159,7 +162,7 @@ h1 {
 }
 
 h2 {
-    color: aliceblue;
+    color: var(--font-color);
 }
 
 .glow {
@@ -174,4 +177,25 @@ h2 {
 
 .hidden{
     visibility: hidden;
+}
+
+#leaderboard{
+    position: relative;
+    height: 370px;
+}
+
+#leaderboard-list{
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: var(--font-color);
+    list-style: none;
+}
+
+#leaderboard-list li:first-child{
+    color: gold;
+}
+
+h3 {
+    color: var(--font-color);
+    font-size: 3rem;
 }

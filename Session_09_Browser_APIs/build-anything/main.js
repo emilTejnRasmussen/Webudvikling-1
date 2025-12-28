@@ -25,6 +25,8 @@ for (const btn of buttons) {
     })
 }
 
+displayLeaderboard()
+
 async function addToSequence(){
     allowInput = false
     entered_sequence = []
@@ -76,8 +78,9 @@ function handleGameOver() {
     setTimeout(() => {
         document.body.classList.remove("gameover");
     }, 500);
-
     
+    updateLeaderboard(score_label.textContent)
+
     score_label.textContent = "0";
 
     start_btn.classList.remove("hidden")
@@ -86,7 +89,30 @@ function handleGameOver() {
 
 }
 
+function updateLeaderboard(score) {
+    let scores = JSON.parse(localStorage.getItem("leaderboard") || "[]")
 
+    scores.push(score)
+    scores.sort((a,b) => b - a)
+    scores = scores.slice(0,5)
+
+    localStorage.setItem("leaderboard", JSON.stringify(scores))
+    displayLeaderboard()
+}
+
+function displayLeaderboard() {
+    const medals = ["🥇", "🥈", "🥉"]
+    const list = document.querySelector("#leaderboard-list")
+    let scores = JSON.parse(localStorage.getItem("leaderboard") || "[]")
+
+    list.innerHTML = "";
+    scores.forEach((score, index) => {
+        const li = document.createElement("li")
+        const medal = medals[index] || "🏅"
+        li.textContent = `${medal} ${score}`
+        list.appendChild(li)
+    })
+}
 
 function makeGlow(id){
     const btn = document.getElementById(id)
@@ -124,20 +150,17 @@ function arraysEqual(a, b) {
 }
 
 
-
-
 function playTone(freq, duration = 300) {
   const ctx = new (window.AudioContext || window.webkitAudioContext)();
   const oscillator = ctx.createOscillator();
   const gain = ctx.createGain();
 
-  oscillator.type = "sine"; // smooth sound
+  oscillator.type = "sine"; 
   oscillator.frequency.value = freq;
 
   oscillator.connect(gain);
   gain.connect(ctx.destination);
 
-  // quick fade out (prevents clicking)
   gain.gain.setValueAtTime(0.3, ctx.currentTime);
   gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration / 1000);
 
@@ -145,7 +168,7 @@ function playTone(freq, duration = 300) {
   oscillator.stop(ctx.currentTime + duration / 1000);
 }
 
-// Example Simon tones:
+
 const tones = {
   green: 329.63,
   red: 261.63,
