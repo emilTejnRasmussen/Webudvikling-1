@@ -36,8 +36,6 @@ async function addToSequence(){
 
     sequence.push("b" + randInt)
 
-    await new Promise(res => setTimeout(res, 1000));
-
     await playSequence()
     allowInput = true
 }
