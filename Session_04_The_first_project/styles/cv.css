@@ -1,46 +1,91 @@
-
 #cv-container {
-    border: 3px solid var(--header-font-color);
-    border-top: none;
-    padding: 2.5rem;
+  border: 3px solid var(--header-font-color);
+  border-top: none;
+  padding: 2.5rem;
 }
-
-
 
 #cv-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media(max-width: 1200px){
-        grid-template-columns: 1fr;
-    }
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "img header header"
+    "contact experience experience"
+    "education experience experience"
+    "language reference reference";
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    text-align: center;
+    grid-template-areas:
+      "img"
+      "header"
+      "experience"
+      "education"
+      "language"
+      "reference"
+      "contact";
+  }
 }
 
-img{
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
+#cv-img {
+  grid-area: img;
+}
+#cv-header {
+  grid-area: header;
+}
+#cv-contact {
+  grid-area: contact;
+}
+#cv-education {
+  grid-area: education;
+}
+#cv-language {
+  grid-area: language;
+}
+#cv-experience {
+  grid-area: experience;
+}
+#cv-reference {
+  grid-area: reference;
+}
+
+.spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
 }
 
 #cv-container h2 {
-    color: var(--header-font-color);
+  color: var(--header-font-color);
+  font-size: 2rem;
 }
 
 #cv-container h3 {
-    color: grey;
+  color: grey;
 }
 
 #cv-container h4 {
-    color: black;
-    font-size: 1.3rem;
+  color: black;
+  font-size: 1.3rem;
 }
 
 #cv-container p {
-    color: gray;
-    font-size: 1rem;
+  color: gray;
+  font-size: 1rem;
 }
 
 #cv-container .cv-small-header {
-    color: black;
-    font-size: 1.2rem;
+  color: black;
+  font-size: 1.2rem;
 }
-
