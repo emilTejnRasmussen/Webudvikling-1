@@ -10,8 +10,6 @@ form {
   max-width: 330px;
 }
 
-/* Form header */
-
 #form-header {
   padding: 30px;
 
@@ -26,8 +24,6 @@ form {
   height: auto;
   object-fit: contain;
 }
-
-/* Form body */
 
 #form-body {
   display: flex;
@@ -51,10 +47,6 @@ form {
     cursor: pointer;
   }
 }
-
-
-
-/* PROGRESS BAR */
 
 .progress-bar {
   position: relative;
@@ -102,7 +94,6 @@ form {
   left: 100%;
 }
 
-/* Form footer */
 .form-footer {
   display: flex;
   align-items: center;
@@ -133,12 +124,12 @@ form {
   grid-template-columns: 1fr;
 }
 
-/* UTILITY */
+
 .bottom {
-  margin-top: auto; /* skubber alt over knappperne op */
+  margin-top: auto;
 }
 
-/* Validate */
+
 .validate:user-valid {
   outline: 3px solid var(--c-succes);
 }
@@ -148,7 +139,6 @@ form {
 }
 
 
-/* FORM ELEMENTS */
 input,
 textarea, select {
   border-radius: 5px;
@@ -215,7 +205,6 @@ datalist {
 }
 
 
-/* Desktop og op */
 @media (min-width: 820px) {
   form {
     grid-template-columns: 2fr 3fr;

@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Says</title>
-    <link rel="icon" type="image/x-icon" href="images/simon-icon.png">
+    <link rel="icon" type="image/x-icon" href="images/simon-icon.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="title-board">
-            <h1>Simon Says!</h1>
-        </div>
-        <h2>Score: <span id="score"></span></h2>
-        <div id="board">
-            <div id="b1" class="box"></div>
-            <div id="b2" class="box"></div>
-            <div id="b3" class="box"></div>
-            <div id="b4" class="box"></div>
-        </div>
-        <button id="start">Start</button>
+      <div id="title-board">
+        <h1>Simon Says!</h1>
+      </div>
+      <h2>Score: <span id="score"></span></h2>
+      <div id="board">
+        <div id="b1" class="box"></div>
+        <div id="b2" class="box"></div>
+        <div id="b3" class="box"></div>
+        <div id="b4" class="box"></div>
+      </div>
+      <button id="start">Start</button>
     </main>
     <aside id="leaderboard">
-        <h3>Leaderboard:</h3>
-        <ol id="leaderboard-list">
-            <li><span id="leader1"></span></li>
-            <li><span id="leader2"></span></li>
-            <li><span id="leader3"></span></li>
-            <li><span id="leader4"></span></li>
-            <li><span id="leader5"></span></li>
-        </ol>
-
+      <p id="description">
+        Press Start to begin the pattern. <br>Watch closely and repeat the sequence
+        of colors and sounds. 
+        <br>Each round adds a new step. Make one mistake… and
+        it's Game Over!
+      </p>
+      <h3>Leaderboard:</h3>
+      <ol id="leaderboard-list">
+        <li><span id="leader1"></span></li>
+        <li><span id="leader2"></span></li>
+        <li><span id="leader3"></span></li>
+        <li><span id="leader4"></span></li>
+        <li><span id="leader5"></span></li>
+      </ol>
     </aside>
-</body>
+  </body>
 </html>
